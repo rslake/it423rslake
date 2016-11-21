@@ -1,89 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<title>it423rslake</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-</head>
+<html>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #aabbff;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ccc;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #aabbcc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
 <body>
+<img src="rslake1.jpg" alt="Picture of Robert Scott Lake" width="275" height="275">
 <ul class="tab">
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'home')">Home</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'resume')">Resume</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'activities')">Senior Activities</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'fieldsstudy')">Fields of Study</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'soft')">Soft Skills</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'extra')">Extra-Curricular Activities</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'awards')">Awards and Honors</a><li>
-	<li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'career')">Career Path</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Home')">Home</a><li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Resume')">Resume</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Senior')">Senior<br>Activities</a></li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Fields')">Fields of Study</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Soft')">Soft Skills</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Extra')">Extra-Curricular<br>Activities</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Awards')">Awards and<br>Honors</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Career')">Career<br>Path</a><li>
 </ul>
 
-<div id="home" class="tabcontent">
+<div id="Home" class="tabcontent">
 	<p title="A little about me.">I am a Senior at Marymount University interested in developing software that aids individuals in solving real world problems. Washington DC is home to some of the most influential people in the country and in the world who need access to up to date and pertinent information. My objective is to work in news organizations, NGOs and government organizations to improve and streamline the collection and dissemination of information through software applications.</p>
 </div>
 
-<div id="resume" class="tabcontent">
+<div id="Resume" class="tabcontent">
 	<h3>Resume</h3>
-	<p>Resume goes here<p>
+	<a target="_blank" href="RSLakeResumeBase.pdf" title="Resume">Click here for resume.</a>
 </div>
 
-<div id="activities" class="tabcontent">
+<div id="Senior" class="tabcontent">
 	<h3>Senior Activities</h3>
-	<p>Resume goes here<p>
+	<h4>Internship</h4>
+	<p>I am actively looking for an internship in mobile app and software development.</p>
+	<h4>Capstone Project</h4>
+	<p>I will be finalizing my Capstone Project shortly.</p>
 </div>
 
-<div id="fieldsstudy" class="tabcontent">
+<div id="Fields" class="tabcontent">
 	<h3>Fields of Study</h3>
-	<p>Resume goes here<p>
+	<p>The file links below are samples of some IT Coursework</p>
+	<h4>Software Testing</h4>
+	<a target="_blank" href="rslForgetPswrdEV.pdf" title="Software Testing">Forgot Password Function Test Plan</a>
+	<h4>Documentation</h4>
+	<a target="_blank" href="rslWhitePaper.pdf" title="Documentation">Stress Testing: White Paper</a>
+	<h4>Cybersecurity</h4>
+	<a target="_blank" href="Eng-CyberExample12.pdf" title="Cybersecurity">Entertainment and Mass Media: Software Vulnerabilities</a>
+	<h4>Human Computer Interaction</h4>
+	<a target="_blank" href="StudyWebsites.pdf" title="Human Computer Interaction">Effect of Culture on Academic Websites: Brazil</a>
 </div>
 
-<div id="soft" class="tabcontent">
+<div id="Soft" class="tabcontent">
 	<h3>Soft Skills</h3>
-	<p>Resume goes here<p>
+	<p>These documents are examples of the following soft skills.<p>
+	<h4>Team Work</h4>
+	<a target="_blank" href="" title="">Stock Market Game</a>
+	<h4>Written Communication</h4>
+	<a target="_blank" href="" title="">Memo</a>
+	<h4>Information Literacy</h4>
+	<a target="_blank" href="" title="">Outsourcing Software Testing Offshore: Pros and Cons</a>
 </div>
 
-<div id="extra" class="tabcontent">
+<div id="Extra" class="tabcontent">
 	<h3>Extra-Curricular Activities</h3>
 	<p>Resume goes here<p>
 </div>
 
-<div id="awards" class="tabcontent">
+<div id="Awards" class="tabcontent">
 	<h3>Awards and Honors</h3>
 	<p>Resume goes here<p>
 </div>
 
-<div id="career" class="tabcontent">
+<div id="Career" class="tabcontent">
 	<h3>Career Path</h3>
 	<p>Resume goes here<p>
 </div>
-	
-<img src="rslake1.jpg" alt="Picture of Robert Scott Lake" width="275" height="275">
-<h1>Robert Scott Lake</h1>
 
 <script>
-function openSection(evt, section) {
-    // Declare all variables
+function openSection(evt, cityName) {
     var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-
-    // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(openSection).style.display = "block";
+    document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 </script>
-
-
-
+     
 </body>
 </html>
+
