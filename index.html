@@ -75,7 +75,7 @@ display: inline-block;
 </div>
   
 <ul class="tab">
-  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Home')">Home</a><li>
+  <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Home')" id="defaultOpen">Home</a><li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Resume')">Resume</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Senior')">Senior Activities</a></li>
   <li><a href="javascript:voic(0)" class="tablinks" onclick="openSection(event,'Fields')">Fields of Study</a><li>
@@ -199,6 +199,9 @@ function openSection(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
      
 </body>
